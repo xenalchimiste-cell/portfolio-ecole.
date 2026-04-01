@@ -3,7 +3,7 @@
  * Provides a standardized structure for all portfolio parts.
  * Decouples layout concerns from content logic.
  */
-import React from 'react';
+
 
 const Section = ({ id, title, subtitle, children, className = "" }) => {
   return (

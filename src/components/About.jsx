@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Section from './Section';
 
 const About = () => {
@@ -12,15 +10,15 @@ const About = () => {
             <strong className="text-foreground"> BTS SIO option SLAM</strong> (Solutions Logicielles et Applications Métier) à Lyon Ynov Campus.
           </p>
           <p>
-            Mon parcours m'a permis d'acquérir de solides bases techniques, tant en infrastructure qu'en développement. 
-            Aujourd'hui, mon intérêt se porte principalement sur le <strong className="text-foreground">développement back-end</strong>, 
-            où j'apprécie concevoir des architectures performantes et structurées.
+            Mon parcours m&apos;a permis d&apos;acquérir de solides bases techniques, tant en infrastructure qu&apos;en développement. 
+            Aujourd&apos;hui, mon intérêt se porte principalement sur le <strong className="text-foreground">développement back-end</strong>, 
+            où j&apos;apprécie concevoir des architectures performantes et structurées.
           </p>
         </div>
         <div className="space-y-4 text-muted-foreground leading-relaxed text-sm sm:text-base">
           <p>
-            Ma vision du développement repose sur la rigueur, la scalabilité et l'apprentissage continu. 
-            Je ne me contente pas de coder une fonctionnalité ; je cherche à comprendre comment elle s'intègre 
+            Ma vision du développement repose sur la rigueur, la scalabilité et l&apos;apprentissage continu. 
+            Je ne me contente pas de coder une fonctionnalité ; je cherche à comprendre comment elle s&apos;intègre 
             dans un écosystème global, de la base de données au déploiement.
           </p>
         </div>

@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-
+import { useState } from 'react';
 import Section from './Section';
-
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle, loading, success, error

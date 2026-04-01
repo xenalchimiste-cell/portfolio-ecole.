@@ -5,7 +5,7 @@
  * - Data Files: Content is decoupled from components (src/data/) for better maintainability.
  * - Tailwind v4: Performance-first CSS using CSS variables and OKLCH color space.
  */
-import React from 'react';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
