@@ -5,9 +5,38 @@
  */
 
 
+import { useEffect, useRef } from 'react';
+
 const Section = ({ id, title, subtitle, children, className = "" }) => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id={id} className={`space-y-8 animate-in fade-in duration-700 scroll-mt-20 ${className}`}>
+    <section 
+      id={id} 
+      ref={sectionRef}
+      className={`reveal py-12 ${className}`}
+    >
       {(title || subtitle) && (
         <div className="space-y-2">
           {title && (
