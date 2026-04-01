@@ -1,0 +1,9 @@
+:root {
+    --bg-primary: #0f1115;
+    --bg-secondary: #181b21;
+    --text-primary: #e6e6e6;
+    --text-secondary: #a0a0a0;
+    --accent: #4f8cff;
+  
+    --max-width: 1100px;
+  }
